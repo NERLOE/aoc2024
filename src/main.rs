@@ -1,8 +1,9 @@
 mod dec_01;
 mod dec_02;
+mod dec_03;
 mod utils;
 
-const RUN_DAY: &str = "dec_02";
+const RUN_DAY: &str = "dec_03";
 
 fn main() {
     let start = std::time::Instant::now();
@@ -14,6 +15,7 @@ fn main() {
     match RUN_DAY {
         "dec_01" => dec_01::main(contents),
         "dec_02" => dec_02::main(contents),
+        "dec_03" => dec_03::main(contents),
         _ => println!("No matching day found"),
     }
 
